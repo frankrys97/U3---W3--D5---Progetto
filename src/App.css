@@ -141,11 +141,6 @@ ul {
   justify-content: space-between;
 }
 
-.playerControls div:first-of-type {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 .playerControls a img {
   width: 14px;
   margin-top: 1rem;
@@ -155,19 +150,6 @@ ul {
 .playerControls a:hover {
   filter: brightness(80%);
   color: #282828 !important;
-}
-
-.progress {
-  color: white;
-  background-color: #414141;
-  height: 3px;
-}
-
-@media screen and (min-width: 1200px) {
-  .playerControls div:first-of-type {
-    margin-left: 25%;
-    margin-right: 25%;
-  }
 }
 
 /*MAIN PAGE SECTION*/
@@ -191,14 +173,6 @@ ul {
   transition: 0.3s;
 }
 
-.imgLinks a p,
-.mainPage p {
-  padding-top: 8px;
-  font-size: 12px;
-  color: white;
-  font-weight: 700;
-}
-
 #rock,
 #pop,
 #hiphop {
@@ -213,4 +187,27 @@ ul {
 
 .mainPage img {
   width: 200px;
+}
+
+.playCardButton {
+  color: white;
+}
+
+.playCardButton:hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+
+.heartBtn {
+  cursor: pointer;
+  color: white;
+}
+
+.heartBtn:hover {
+  color: #1ed760;
+}
+
+.btnAddCode:hover {
+  color: #1ed760;
+  cursor: pointer;
 }

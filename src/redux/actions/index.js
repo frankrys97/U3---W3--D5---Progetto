@@ -8,6 +8,7 @@ export const ADD_FAVOURITE_SONG = "ADD_FAVOURITE_SONG";
 export const REMOVE_FAVOURITE_SONG = "REMOVE_FAVOURITE_SONG";
 export const SET_INPUT = "SET_INPUT";
 export const SET_SONG_ON_PLAYER = "SET_SONG_ON_PLAYER";
+export const ADD_SONG_ON_PLAYER = "ADD_SONG_ON_PLAYER";
 
 export const loginSuccess = (user) => ({
   type: LOGIN_SUCCESS,
@@ -41,7 +42,7 @@ export const hiphopFetch = (data) => ({
 export const setInput = (text) => ({
   type: SET_INPUT,
   payload: text,
-})
+});
 
 export const getFetchGenres = (artistName, genre) => {
   return (dispatch) => {
@@ -77,5 +78,10 @@ export const removeFavouriteSong = (song) => ({
 
 export const setSongOnPlayer = (song) => ({
   type: SET_SONG_ON_PLAYER,
-  payload: song
-})
+  payload: song,
+});
+
+export const addSongOnPlayer = (song) => ({
+  type: ADD_SONG_ON_PLAYER,
+  payload: song,
+});
