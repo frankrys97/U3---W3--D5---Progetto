@@ -31,7 +31,9 @@ const SerchedSong = () => {
   };
 
   useEffect(() => {
-    renderSearchedSong();
+    if (searchedSong !== "") {
+      renderSearchedSong();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchedSong]);
 
