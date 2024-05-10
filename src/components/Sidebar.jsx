@@ -81,8 +81,8 @@ const Sidebar = () => {
         <div className="nav-btn p-2 mx-auto">
           {authenticate && authenticate.user ? (
             <div>
-              <p className="text-white">
-                Ciao, {`${authenticate.user.name} ${authenticate.user.surname}`}
+              <p className="text-secondary">
+                Ciao, <span className="fw-bold text-light"> {`${authenticate.user.name} ${authenticate.user.surname}`}</span>
               </p>
               <Button className="login-btn" onClick={handleLogout}>
                 Logout
